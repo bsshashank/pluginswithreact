@@ -1,0 +1,2 @@
+'use strict';Object.defineProperty(exports,'__esModule',{value:true});var items=['items'];exports.default={items:items};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdldHRlcnMuanN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJzRUFDQSxHQUFNLE9BQVEsQ0FBQyxPQUFELENBQWQsQyxnQkFFZSxDQUFFLFdBQUYsQyIsImZpbGUiOiJnZXR0ZXJzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmNvbnN0IGl0ZW1zID0gWydpdGVtcyddXHJcblxyXG5leHBvcnQgZGVmYXVsdCB7IGl0ZW1zIH1cclxuIl19
