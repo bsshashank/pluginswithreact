@@ -25,4 +25,4 @@ var PluginContent = React.createClass({
 });
 
 // export default Radium(PluginContent);
-export default PluginContent;
+module.exports = PluginContent;

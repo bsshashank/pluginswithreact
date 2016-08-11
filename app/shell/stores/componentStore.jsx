@@ -5,10 +5,11 @@ import {
   MOUNT_COMPONENT,
 } from '../actionTypes'
 
-import Plugin from '../../plugins/reactwithnuclear/pluginContent'
+// import Plugin from '../../plugins/reactwithnuclear/pluginContent'
 
 var RegisteredPlugins = PluginsManager.getRegisteredPlugins();
 console.log("Registered Plugins " + JSON.stringify(RegisteredPlugins));
+console.log("Plugins " + RegisteredPlugins);
 
 /*var requiredPackages = function (plugins) {
   plugins.map(function(plugin) {
@@ -18,12 +19,8 @@ console.log("Registered Plugins " + JSON.stringify(RegisteredPlugins));
 
 export default Store({
   getInitialState() {
-    return toImmutable(
-      {
-        components:
-        [
-          Plugin
-        ]
+      return toImmutable({
+        components:RegisteredPlugins
       })
     },
 
