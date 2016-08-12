@@ -1,15 +1,15 @@
 import reactor from './reactor'
 import {
-    REGISTER_COMPONENT,
-    MOUNT_COMPONENT,
+    MOUNT_REGISTERED_PLUGINS,
+    REGISTER_MOUNT_PLUGIN,
 } from './actionTypes'
 
 export default {
-  registerComponent(component) {
-      reactor.dispatch(REGISTER_COMPONENT, { component })
+  mountRegisteredPlugins(plugins) {
+      reactor.dispatch(MOUNT_REGISTERED_PLUGINS, { plugins })
   },
 
-  mountComponent(compoment) {
-    reactor.dispatch(MOUNT_COMPONENT)
+  registerMountPlugin(newPlugin) {
+    reactor.dispatch(REGISTER_MOUNT_PLUGIN, {newPlugin})
   },
 }

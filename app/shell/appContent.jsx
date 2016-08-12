@@ -2,22 +2,26 @@
 
 var React = require('react');
 import Radium from 'radium';
-import Content from './content';
-import actions from './actions';
+import PluginsRenderer from './pluginsrenderer';
+import PluginsManager from './PluginManager/manager';
 import reactor from './reactor';
-import ComponentStore from './stores/componentStore'
+import PluginStore from './stores/pluginStore';
+import actions from './actions';
 
 reactor.registerStores({
-  'components': ComponentStore,
+  'plugins': PluginStore,
 })
 
-actions.mountComponent();
-
 var AppContent = React.createClass({
+
+  componentDidMount: function(){
+    actions.mountRegisteredPlugins();
+  },
+
   render: function() {
     return(
       <div>
-        <Content />
+        <PluginsRenderer />
       </div>
     );
   }

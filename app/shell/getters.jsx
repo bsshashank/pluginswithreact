@@ -1,8 +1,6 @@
 "use strict";
 import Radium from 'radium';
 
-const components = ['components'];
+const plugins = ['plugins'];
 
-console.log("components from getters " + components);
-
-export default { components }
+export default { plugins }
