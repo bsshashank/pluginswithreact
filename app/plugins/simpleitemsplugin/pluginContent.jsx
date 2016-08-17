@@ -1,10 +1,10 @@
 "use strict";
 
 var React = require('react');
-// import TestDisplayItems from './testDisplayItems';
 import Radium from 'radium';
 import reactor from './reactor';
 import actions from './actions';
+import TestDisplayItems from './testdisplayitems';
 import ItemStore from './stores/itemStore'
 
 reactor.registerStores({

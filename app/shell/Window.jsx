@@ -3,13 +3,14 @@ import React from 'react';
 import Radium from 'radium';
 
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import TestContent from './testContent';
 
 import AppTitle from './controls/AppTitle';
 import DragHandler from './controls/DragHandler';
 import MinimizeButton from './controls/MinimizeButton';
 import MaximizeButton from './controls/MaximizeButton';
 import CloseButton from './controls/CloseButton';
-import AppContent from './appContent';
+// import AppContent from './appContent';
 
 const WindowStyle = {
   padding: 0,
@@ -21,18 +22,18 @@ const WindowStyle = {
 };
 
 /**
- *
- *
- * @class Window
- * @extends {React.Component}
- */
+*
+*
+* @class Window
+* @extends {React.Component}
+*/
 class Window extends React.Component {
 
   /**
-   *
-   *
-   * @returns
-   */
+  *
+  *
+  * @returns
+  */
   render() {
 
     var headerComponents = {};
@@ -77,7 +78,7 @@ class Window extends React.Component {
           </Drawer>
           <Content>
             {this.props.children}
-            <AppContent />
+            <TestContent />
           </Content>
         </Layout>
       </div>

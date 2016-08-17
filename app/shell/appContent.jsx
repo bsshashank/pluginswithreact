@@ -12,6 +12,8 @@ reactor.registerStores({
   'plugins': PluginStore,
 })
 
+PluginsManager.registerNewPlugin('{"name": "test"}');
+
 var AppContent = React.createClass({
 
   componentDidMount: function(){
