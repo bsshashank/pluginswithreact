@@ -1,5 +1,5 @@
-# electron-boilerplate
-An electron boilerplate project incl. PouchDB, React + NuclearJS, Grommet UI Framework
+# Electron app with React for supporting plugins
+An electron boilerplate project incl. PouchDB, React + NuclearJS, reactmdl UI Framework
 
 ## Included modules
 * [Electron](http://electron.atom.io)
@@ -15,7 +15,7 @@ An electron boilerplate project incl. PouchDB, React + NuclearJS, Grommet UI Fra
 * install Python 2.7 from [here](http://www.python.org) and add the installation directory to your system path variable
 * For Windows, install Windows SDK for Windows Server 2008 and .NET Framework 3.5 from [here](http://www.microsoft.com/en-us/download/details.aspx?id=11310)
 * For Windows, install Visual Studio 2013/2015 (Express for Desktop is sufficient).
-* clone git repository (```git clone -b reactjs https://github.com/appelgriebsch/electron-boilerplate.git```)
+* clone git repository (```git clone https://github.com/bsshashank/pluginswithreact.git```)
 * open terminal and run ```npm install``` to install dependencies
 * start application in debug by executing ```npm start``` in terminal
 
