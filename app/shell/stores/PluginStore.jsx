@@ -3,7 +3,7 @@ import PluginsManager from '../pluginManager/manager'
 import {
   MOUNT_REGISTERED_PLUGINS,
   REGISTER_MOUNT_PLUGIN,
-} from '../actionTypes'
+} from '../types/actionTypes'
 
 var RegisteredPlugins = PluginsManager.getRegisteredPlugins();
 console.log('registered plugins ' + JSON.stringify(RegisteredPlugins));
