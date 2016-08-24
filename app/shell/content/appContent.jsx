@@ -17,7 +17,7 @@ var PluginsRenderer = React.createClass({
   mixins: [reactor.ReactMixin],
 
   getInitialState: function() {
-    return { showPluginCards: true, selectedPluginName: '' };
+    return { showPluginCards: true, selectedPluginName: 'simpleitemsplugin' };
   },
 
   getDataBindings() {
@@ -30,8 +30,8 @@ var PluginsRenderer = React.createClass({
     actions.mountRegisteredPlugins();
   },
 
-  onClick: function(){
-    console.log("called onClick");
+  onClick: function(event){
+    // console.log("called onClick and event " + JSON.stringify(event));
     this.setState({ showPluginCards: false });
   },
 
@@ -39,7 +39,7 @@ var PluginsRenderer = React.createClass({
     return(
       <div>
         <h6>This is a Simple reactjs application that supports plugins with nuclear-js.</h6>
-        {this.state.showPluginCards ? <PluginCardRenderer registeredplugins={this.state.plugins} onPluginSelection={this.onClick} /> : null }
+        {this.state.showPluginCards ? <PluginCardRenderer pluginToDisplay={this.state.selectedPluginName} registeredplugins={this.state.plugins} onPluginSelection={this.onClick} /> : null }
         {this.state.showPluginCards ? null : <RenderPlugins selectedPlugin={this.state.selectedPluginName} registeredplugins={this.state.plugins} /> }
       </div>
     );

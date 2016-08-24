@@ -20,7 +20,6 @@ return <PluginCard cardTitle={plugin.get('cardTitle')} cardText={plugin.get('car
 var PluginCardRenderer = React.createClass({
   render: function() {
     var createPluginCard = function(plugin){
-      console.log("props in PluginCardRenderer " + this);
       console.log("plugin in PluginCardRenderer " + plugin);
       return (<PluginCard onPluginClick={this.props.onPluginSelection} pluginName={plugin.get('name')} cardTitle={plugin.get('cardTitle')} cardText={plugin.get('cardText')} cardActionsButtonText={plugin.get('cardActionsButtonText')} />);
     };

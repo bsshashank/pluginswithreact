@@ -13,7 +13,7 @@ var PluginCard = React.createClass ({
             {this.props.cardText}
           </CardText>
           <CardActions border>
-            <Button colored onClick={this.props.onPluginClick}>{this.props.cardActionsButtonText}</Button>
+            <Button colored onClick={this.props.onPluginClick} value={this.props.pluginName}>{this.props.cardActionsButtonText}</Button>
           </CardActions>
           <CardMenu style={{color: '#fff'}}>
             <IconButton name="share" />
